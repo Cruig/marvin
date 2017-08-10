@@ -26,6 +26,7 @@ body {
 .App {
   font-size: 1.8rem;
   padding: 2rem;
+  display: flex;
 
   @include md {
     padding: 3rem;
@@ -79,19 +80,28 @@ button:hover {
   background: $white;
 }
 
+//.Menu {
+//  align-items: center;
+//  border-bottom: 1px solid $grey-border;
+//  display: flex;
+//  justify-content: space-between;
+//  padding-bottom: 2rem;
+//  margin: 0 auto 2rem;
+//  max-width: 60rem;
+//
+//  @include lg {
+//    margin-left: 20rem;
+//    margin: 0 0 2rem 20rem;
+//    padding-bottom: 0;
+//  }
+//}
+
 .Menu {
-  align-items: center;
-  border-bottom: 1px solid $grey-border;
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 2rem;
-  margin: 0 auto 2rem;
-  max-width: 60rem;
+  min-width: 200px;
+  max-width: 200px;
 
   @include lg {
-    margin-left: 20rem;
-    margin: 0 0 2rem 20rem;
-    padding-bottom: 0;
   }
 }
 
@@ -120,20 +130,19 @@ button:hover {
 }
 
 .Menu-link {
-  display: inline-block;
+  display: block;
   font-family: $font-family-serif;
-  font-style: italic;
-  margin-left: 1.5rem;
-  line-height: 3rem;
+  margin-left: 1rem;
+  line-height: 1.5rem;
   text-decoration: none;
 
   @include md {
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
 
   @include lg {
-    margin: 0 3rem 0 0;
-    line-height: 7.5rem;
+    margin: 0 1rem 0 0;
+    line-height: 1.5rem;
   }
 }
 
@@ -146,7 +155,7 @@ button:hover {
   margin: 0 auto;
 
   @include lg {
-    margin: 0 0 0 20rem;
+    //margin: 0 0 0 20rem;
   }
 }
 

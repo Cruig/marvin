@@ -7,12 +7,12 @@ export default class Menu extends Component {
   render() {
     return (
       <div className='Menu'>
-        <div className='Menu-logo'>
-          <img
-            src={ workAndCoLogoImg }
-            alt='Work & Co logo'
-          />
-        </div>
+        {/*<div className='Menu-logo'>*/}
+          {/*<img*/}
+            {/*src={ workAndCoLogoImg }*/}
+            {/*alt='Work & Co logo'*/}
+          {/*/>*/}
+        {/*</div>*/}
         <div className='Menu-links'>
           <NavLink
             activeClassName='Menu-link--active'
@@ -32,9 +32,44 @@ export default class Menu extends Component {
           <NavLink
             activeClassName='Menu-link--active'
             className='Menu-link'
-            to='/404'
+            to={ routeCodes.CODE }
           >
-            404
+            Personalized Code
+          </NavLink>
+          <NavLink
+            activeClassName='Menu-link--active'
+            className='Menu-link'
+            to={ routeCodes.INVITE_BUTTON }
+          >
+            Invite Button
+          </NavLink>
+          <NavLink
+            activeClassName='Menu-link--active'
+            className='Menu-link'
+            to={ routeCodes.INVITE_FORM }
+          >
+            Invite Form
+          </NavLink>
+          <NavLink
+            activeClassName='Menu-link--active'
+            className='Menu-link'
+            to={ routeCodes.INVITE_EMAIL }
+          >
+            Invite Email
+          </NavLink>
+          <NavLink
+            activeClassName='Menu-link--active'
+            className='Menu-link'
+            to={ routeCodes.BEHAVIOR }
+          >
+            Behavior
+          </NavLink>
+          <NavLink
+            activeClassName='Menu-link--active'
+            className='Menu-link'
+            to={ routeCodes.AB_TESTS }
+          >
+            AB Tests
           </NavLink>
         </div>
       </div>
